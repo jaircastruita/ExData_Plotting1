@@ -13,7 +13,7 @@ day2 <- filter(tb, Date>=as.Date("2007-02-01") & Date<=as.Date("2007-02-02"))
 
 png('plot3.png')
 
-plot(day2$DateTime, day2$Sub_metering_3, ylim=c(1,40),ylab="Energy Submetering", xlab="", type = "n")
+plot(day2$DateTime, day2$Sub_metering_3, ylim=c(1,40),ylab="Energy Sub metering", xlab="", type = "n")
 lines(day2$DateTime, day2$Sub_metering_1, type = "l", col = "black")
 lines(day2$DateTime, day2$Sub_metering_2, type = "l", col = "red")
 lines(day2$DateTime, day2$Sub_metering_3, type = "l", col = "blue")

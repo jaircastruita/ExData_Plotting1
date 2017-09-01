@@ -13,6 +13,6 @@ day2 <- filter(tb, Date>=as.Date("2007-02-01") & Date<=as.Date("2007-02-02"))
 
 png('plot2.png')
 
-plot(day2$DateTime, day2$Global_active_power, type = "l")
+plot(day2$DateTime, day2$Global_active_power, type = "l", xlab = "", ylab = "Global Active Power (kilowatts)")
 
 dev.off()
